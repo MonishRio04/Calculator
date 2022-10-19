@@ -104,7 +104,7 @@ public class MainActivity extends Activity {
                 } else {
                     mValueOne = Float.parseFloat(EditText.getText() + "");
                     Addition = true;
-                    EditText.setText(EditText.getText());
+                    EditText.setText(null);
                 }
             }
         });
@@ -113,7 +113,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(EditText.getText() + "");
                 mSubtract = true;
-                EditText.setText(EditText.getText());
+                EditText.setText(null);
             }
         });
         buttonMul.setOnClickListener(new View.OnClickListener() {
@@ -121,7 +121,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(EditText.getText() + "");
                 Multiplication = true;
-                EditText.setText(EditText.getText());
+                EditText.setText(null);
             }
         });
         buttonDivision.setOnClickListener(new View.OnClickListener() {
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 mValueOne = Float.parseFloat(EditText.getText() + "");
                 Division = true;
-                EditText.setText(EditText.getText());
+                EditText.setText(null);
             }
         });
         buttonEqual.setOnClickListener(new View.OnClickListener() {
